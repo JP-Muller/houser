@@ -36,21 +36,21 @@ export class Dashboard extends Component {
                         <img src={property.image} alt='House Imagery' />
                     </div>
                     <div className='listing-info'>
-                    <div className='property-details'>
-                        <h5>Property Name: {property.name}</h5>
-                        <h5>Address: {property.address}</h5>
-                        <h5>City: {property.city}</h5>
-                        <h5>State: {property.state}</h5>
-                        <h5>Zip Code: {property.zip}</h5>
-                    </div>
-                    <div className='mortgage-rent-info'>
-                        <h5>Monthly Mortgage: {property.mortgage}</h5>
-                        <h5>Desired Rent: {property.rent}</h5>
-                    </div>
-                    <br />
-                    <div className='listing-delete'>
-                        <button onClick={() => this.deleteListing(property.id)}>Delete</button>
-                    </div>
+                        <div className='property-details'>
+                            <h5>Property Name: {property.name}</h5>
+                            <h5>Address: {property.address}</h5>
+                            <h5>City: {property.city}</h5>
+                            <h5>State: {property.state}</h5>
+                            <h5>Zip Code: {property.zip}</h5>
+                        </div>
+                        <div className='mortgage-rent-info'>
+                            <h5>Monthly Mortgage: ${property.mortgage}</h5>
+                            <h5>Desired Rent: ${property.rent}</h5>
+                        </div>
+                        <br />
+                        <div className='listing-delete'>
+                            <button onClick={() => this.deleteListing(property.id)}>Delete</button>
+                        </div>
                     </div>
                     <br /><hr /><br />
                 </div>
@@ -64,7 +64,7 @@ export class Dashboard extends Component {
                 </section>
                 <br /><hr /><br />
                 <section>
-                <header id='listings-header'><b>Home Listings</b></header>
+                    <header id='listings-header'><b>Home Listings</b></header>
                     {houseListings}
                 </section>
                 <House />
