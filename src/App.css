@@ -1,33 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e5f4ec;
+  font-family: "Open Sans", sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+#header-style {
+  display: flex;
+  background: #519872;
+  color: white;
+  height: 100%;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#dashboard-header {
+  width: 100%;
+  height: 9vh;
+  background: #e5f4ec;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#dashboard-header h1 {
+  font-size: 37px;
+}
+
+#dashboard-header button {
+  background: #8aea92;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+#listings-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+.property-listing {
+  background: #dedede;
+  width: 100%;
+  height: 25%;
+}
+.listing-img {
+  padding: 20px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.listing-img img {
+  width: 550px;
+  height: 450px;
+  border-radius: 10px;
+  border-style: groove;
+  border-color: #519872;
+  border-width: 10px;
+}
+
+.listing-info {
+  /* display: flex;
+  justify-items: flex-end; */
+}
+.property-details {
   display: flex;
   flex-direction: column;
+}
+
+.mortgage-rent-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.listing-delete button {
+  font-size: 20px;
+  border: none;
+  background: #8aea92;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#wizard-header {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 10px;
+}
+
+#wizard-header button {
+  background: #fec2c2;
+  border: none;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#wizard-s1-button {
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  background: #3b5249;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#s2-section {
+  margin-top: 25px;
+}
+#s2-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wizard-s2-buttons {
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  background: #3b5249;
+  color: white;
+}
+
+#s3-section {
+  margin-top: 25px;
+}
+
+#rent-header {
+  margin-top: 25px;
+}
+
+#s3-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+#s3-prev-btn {
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  background: #3b5249;
+  color: white;
+}
+#s3-complete-btn {
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  background: #8aea92;
 }
